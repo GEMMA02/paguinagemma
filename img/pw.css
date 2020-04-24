@@ -1,0 +1,293 @@
+
+/*imagenes*/
+.foto1{
+	width:1400px;
+	 height:300px;
+
+}
+
+.foto2{
+	width:300px;
+	 height:500px;
+
+}
+.foto3{
+	width:1000px;
+	 height:300px;
+
+}
+
+.foto4 { padding: 10px; margin: 0px; border: 0px solid black; float: right; width: 250px; }
+
+
+
+
+
+
+
+
+
+
+.barra_menus{
+	overflow: hidden;
+	background-color: rgba(100,100,100,0.7);
+	font-family: sans-serif;
+
+}
+.barra_menus a{
+	float: left;
+	font-size: 16px;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+
+}
+.menu_desplegable {
+	float: left;
+	overflow: hidden;
+
+}
+.menu_desplegable, .boton_desplegar {
+	cursor: pointer;
+	font-size: 16px;
+	border: none;
+	outline: none;
+	color: white;
+	padding: 7px 16px;
+	background-color: rgba(0,0,0,0);
+	font-family: inherit;
+	margin: 0;
+
+}
+.barra_menus a:hover, .menu_desplegable:hover, .boton_deplegar:hover{
+	background-color: rgba(200,0,100,0.9);
+}
+.contenido_desplegable{
+	display: none;
+	position: absolute;
+	background-color: #f9f9f9;
+	min-width: 160px
+	box-shadow:0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+
+}
+.contenido_desplegable a{
+	float: none;
+	color: black;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+	text-align: center;
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.contenido_desplegable a:hover{
+	background-color: #E9967A;
+
+}
+.mostrar{
+	display: block;
+
+}
+html{
+	background:url('by.jpg') no-repeat;
+	min-height: 100%;
+	background-size: cover;
+
+}
+
+
+
+/*segunda parte*/
+
+.botonTituloSeccion{
+	background-color: #FF00FF;
+	color: #00FFFF;
+	cursor: pointer;
+	padding: 25px;
+	width: 100%;
+	border: none;
+	text-align: left;
+	outline: none;
+	font-size: 35px;
+	transition: 0.4s;
+}
+.active, .botonTituloSeccion:hover{
+	background-color: #800080;
+
+}
+.contenidoSeccion{
+	padding-top: 0;
+	display: none;
+	background-color: rgb(255, 0, 255);
+	overflow: hidden;
+	text-align: justify;
+	max-width:90%;
+	margin-left: 5%;
+}
+.contenedor{
+	max-width: 70%;
+	margin-left: 15%;
+}
+
+/*formulario 3 parte*/
+
+
+
+*{
+	box-sizing: border-box; /*cambiar modelo de la caja*/
+}
+body{
+	margin: 0; /* Margen*/
+	font-family: sans-serif; /*familia de fuente*/
+	/*color de fondo*/
+}
+
+
+.formulario{
+	width: 500px; /*especifica la anchura de un elemento*/
+	max-width: 100%; /*limita la anchura maxima de los elementos*/
+	margin: auto; /*establece el margen a los 4 lados*/
+	margin-top: 30px; /*establece la anchura del margen superior de los elementos*/
+	padding: 20px; /*relleno*/
+	box-shadow: 0 0 20px 1px rgba(255,42,0,0.5); /*añade efectos de sombra alrededor del marco*/
+	position: relative; /*especifica un elemento*/
+	background: rgba(50,255,100,0.4); /*relleno*/
+}
+
+.formulario_input, .formulario_label, .formulario_submit{
+	display: block; /*especifica el tipo de cuadro*/
+	width: 100%; /*especifica la anchura de un elemento*/
+	font-size: 1.3em; /*tamano de fuente*/
+}
+
+
+.formulario_titulo{
+	text-align: center; /*texto alineado */
+	margin-top: 0; /*establece la anchura */
+	color: rgba(102,0,51,0.5); /*color*/
+}
+
+.formulario_input{
+	padding: 20px; /*relleno*/
+	background: rgba(221,255,51,0.1); /*color de fondo*/
+	border: 1px solid rgba(255,0,0,0.5); 
+	margin-bottom: 40px; /*longitud absoluta*/
+}
+
+.formulario_label{
+	padding-left: 20px; /*anchura de la zona de relleno izquierdo*/
+	position: absolute; /*pocicion relativa a su ansestro*/
+	margin-top: -105px; /*establece la anchura */
+	padding: 20px; /*relleno*/
+	z-index: -20; /*ajusta el orden*/
+	color: rgb(0,0,0); /*color*/
+	transition: all 0.2s; /*permite definir entre dos estados*/
+}
+
+
+.formulario_submit{
+	background: rgba(0,0,0,0.7); /*color de fondo*/
+	color: rgb(255,100,255); /*color*/
+	padding: 10px 20px; /*relleno*/
+	cursor: pointer; /*permite selecionar un punter entre los dispononles*/
+	border: none; /*establece el mismo grosor estilo o anchura*/
+	border-radius: 90px; /*permite que tan redondeado deve de ser*/
+}
+
+.formulario_input:focus{
+	.outline: 3px solid rgba(100,50,104,0.9); /*establecer de forma abreviada 
+	el valor de una o mas propiedades*/
+}
+
+.formulario_input:focus+.formulario_label{
+	margin-top: -150px;/*establece la anchura */
+}
+.fijar{
+	margin-top: -150px;/*establece la anchura */
+}
+
+
+
+
+
+
+
+
+
+
+.Banner{ /*aqui lo primero que se va hacer es lo de bannar
+	que los datos siguientes son para el cuadro*/
+	width: 700px;
+	height: 300px;
+	 /*aqui se le puso el border de color
+	rojo*/
+	margin: auto;/*esto es para centrarlo*/
+
+	background-size: 100% 100%; /*aqui nos permite el tamaño que
+	tener las imagenes*/
+
+    animation: banner 10s infinite;/*aqui tendran animacion las imagenes y solo
+    fue una linea*/
+    animation-direction: alternate;/*aqui lo que hace esque no se vea lo blanco */
+}
+
+@keyframes banner{ /*aqui son las paradas que tendran cada una*/
+	0%, 10%{ /*estos porcentajes son de la imagen
+		uno*/
+		background-image: url(gemma1.jfif); /*primera imagen*/
+		opacity: 1;
+	}
+    11%, 20%{
+    	opacity: 0.1; /*aqui es para el pequeño espacio de la imagen*/
+    }
+	21%, 30%{/*estos otros son de la imagen dos*/
+		background-image: url(gemma2.jfif);/*segunda imagen*/
+		opacity: 1;
+	}
+    31%, 40%{
+    	opacity: 0.1;
+    }
+	41%, 50%{ /*y estos de la imagen tres*/
+		opacity: 1;
+		background-image: url(gemma3.jfif);/*tercera imagen*/
+	}
+	 51%, 60%{
+    	opacity: 0.1;
+    }
+	61%, 70%{ /*y estos de la imagen tres*/
+		opacity: 1;
+		background-image: url(h2.jfif);/*tercera imagen*/
+	}
+	 71%, 80%{
+    	opacity: 0.1;
+    }
+	81%, 85%{ /*y estos de la imagen tres*/
+		opacity: 1;
+		background-image: url(1.jfif);/*tercera imagen*/
+	}
+	 90%, 94%{
+    	opacity: 0.1;
+    }
+	95%, 100%{ /*y estos de la imagen tres*/
+		opacity: 1;
+		background-image: url(2.jfif);/*tercera imagen*/
+	}
+}
+
